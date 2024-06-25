@@ -1,8 +1,32 @@
+**Account address**: 0xFA3B92F5582910E903bF3086aC6D29cE2fEBe839
+
+**Contract address**: 0x9f06146ef62224d5899c19E76bb759E42C46EDdB
+
+**Aspect address**: 0x3f0EE12759fC3B0C5fd28692013625004326Ee94
+
+## Create Contract
+
+![Create Contract](./createContract.png)
+
+## Create Aspect ID
+
+![Create Aspect ID](./AspectId.png)
+
+## Bind Contract
+
+![Bind Contract](./bindContract.png)
+
+## Transaction Result
+
+![Transaction Result](./transactionResult.png)
+
 # Throttler Aspect (Simplified Version)
+
 
 Simplified version of Throttler Aspect from [ShiningRay](https://github.com/ShiningRay/), this Aspect is used for limiting the request rate of certain smart contract.
 
 **Typical Scenario**:
+
 - In airdrop, limit the per address claim frequency.
 - For influential projects, protect from DDoS.
 
@@ -124,7 +148,6 @@ The parameters are as follows:
 
 Remember the final aspectID for future binding.
 
-
 ### Binding
 
 Run the `bind.cjs` script and input the previously deployed contract address (or your own contract address) and the aspect id.
@@ -238,5 +261,3 @@ Error: Transaction has been reverted by the EVM:
 ```
 
 If the script returns an error, it indicates that the rate limiter has successfully prevented the transaction from going through.
-
-
